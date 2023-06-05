@@ -50,3 +50,28 @@ Here is what happends if we write `private int childNumber` instead of `private 
 - Initially `childNumber` is 0. For `Obj1` it becomes 1.
 - On the second object the same thing happens. It starts from 0 and `Obj2` makes it 1.  
 - It resets because it isn't static. Static fixes this issue. Without static every Child No. would show 1. 
+
+
+## Static Methods
+**In Java, similar to static variable a static method is a method that belongs to a class rather than an instance of a class. It can be accessed directly through the class name, without the need to create an object of that class.**
+
+*For Example,*
+
+```java
+public class greetings {
+    public static void morningGreeting(){
+        System.out.println("Good Morning");
+    }
+}
+```
+```java
+public class Main {
+    public static void main(String[] args) {
+       greetings.morningGreeting();
+    }
+}
+```
+*Output:*
+```
+Good Morning
+```
