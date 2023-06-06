@@ -179,7 +179,7 @@ public class Main {
 Roll: 1, Name: Messi, Age: 12
 Roll: 2, Name: Ronaldo, Age: 15
 ```
-Or this name result can be achieved by just passing the values to `printDetails` method as arguments.
+Or this same result can be achieved by just passing the values to `printDetails` method as arguments.
 ```java
 public class Student {
 
@@ -219,12 +219,17 @@ There are four access modifiers in Java
 ```java
 public class Example {
     public int publicVariable;
+    private int privateVariable;
     protected int protectedVariable;
     int defaultVariable;
-    private int privateVariable;
+    
 
     public void publicMethod() {
         // Code accessible from anywhere
+    }
+    
+    private void privateMethod() {
+        // Code accessible within the same class only
     }
 
     protected void protectedMethod() {
@@ -234,10 +239,7 @@ public class Example {
     void defaultMethod() {
         // Code accessible within the same package
     }
-
-    private void privateMethod() {
-        // Code accessible within the same class only
-    }
+    
 }
 
 ```
