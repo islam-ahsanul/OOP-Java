@@ -207,7 +207,40 @@ Roll: 2, Name: Ronaldo, Age: 15
 ```
 So it is clear that using objects provides us with the flexibility to accomplish tasks in various ways.
 
+## Access Modifiers
+Access modifiers control the visibility or accessibility of class members (fields, constructors, and methods).  
 
+There are four access modifiers in Java
+- `public`: Members are accessible from anywhere.
+- `private`: Members are only accessible within the same class.
+- `protected`: Members are accessible within the same class, 
+- Default (no modifier mentioned): Members are accessible within the same package.
+
+```java
+public class Example {
+    public int publicVariable;
+    protected int protectedVariable;
+    int defaultVariable;
+    private int privateVariable;
+
+    public void publicMethod() {
+        // Code accessible from anywhere
+    }
+
+    protected void protectedMethod() {
+        // Code accessible within the same package and subclasses
+    }
+
+    void defaultMethod() {
+        // Code accessible within the same package
+    }
+
+    private void privateMethod() {
+        // Code accessible within the same class only
+    }
+}
+
+```
 ## Static Variables
 
 **In Java, static variables belong to the class rather than to objects or instances of the class. They are also known as class variables because they are shared among all objects or instances of the class.**
