@@ -1,7 +1,7 @@
 # OOP in Java
 > Collection of Java code examples and explanations covering OOP concepts.
 
-## Into
+## Intro
 **OOP stands for Object-Oriented Programming. It is a programming paradigm that organizes software design around objects, which are instances of classes. Here, we'll explore the basics of OOP in Java, including classes, objects, inheritance, polymorphism, and encapsulation.**  
 
 In order to fully understand the main concepts of OOP,  it is importand to familiarize ourselves with Java classes and their components such as constructors, methods, access modifiers and objects. 
@@ -37,7 +37,7 @@ public class MyClass {
 
     // main method
     public static void main(String[] args){  
-    
+        
     }
     
     
@@ -60,8 +60,12 @@ A constructor is a special method used to initialize objects of a class. It has 
 ```java
 public class MyClass {
     
-    // constructor
+    // Default Constructor
     public MyClass() {
+        
+    }
+    // Parametarized Constructor
+    public MyClass(int a, String b) {
         
     }
 
@@ -81,6 +85,127 @@ public class MyClass {
     } 
 }
 ```
+
+## Fields
+Fields are basically the variables declared within a class. 
+```java
+public class MyClass {
+    int x = 0;
+}
+```
+
+## Objects
+An object is an instance of a class. In OOP a class describes the structure and behavior of an object. The class acts as a template or a blueprint for creating individual instances of that object.
+Bellow code how an object is created. 
+
+```java
+// for default constructor
+MyClass obj1 = new MyClass();
+
+// for parameterized constructor
+MyClass obj2 = new MyClass(25, 'Hello World');
+```
+## Working with multiple classes
+In order to fully demonstrate the advantages of objects, it is very importand to learn working with multiple classes.
+
+```java
+public class Student {
+    public String name;
+    public int age;
+    public int classRoll;
+
+    public void printDetails(){
+        System.out.println("Roll: "+classRoll+", Name: "+name+", Age: "+age);
+    }
+}
+```
+```java
+public class Main {
+    public static void main(String[] args) {
+        Student stud1 = new Student();
+        Student stud2 = new Student();
+
+        stud1.name = "Messi";
+        stud1.age = 12;
+        stud1.classRoll = 1;
+
+        stud2.name = "Ronaldo";
+        stud2.age = 15;
+        stud2.classRoll = 2;
+
+        stud1.printDetails();
+        stud2.printDetails();
+    }
+}
+```
+*Output:*
+```
+Roll: 1, Name: Messi, Age: 12
+Roll: 2, Name: Ronaldo, Age: 15
+```
+Same task can be done more cleanly with parametarized constructor. 
+```java
+public class Student {
+    String name;
+    int age;
+    int classRoll;
+
+    public Student(String name, int age, int classRoll) {
+        this.name = name;
+        this.age = age;
+        this.classRoll = classRoll;
+    }
+
+    public void printDetails(){
+        System.out.println("Roll: "+classRoll+", Name: "+name+", Age: "+age);
+    }
+}
+
+```
+```java
+
+public class Main {
+    public static void main(String[] args) {
+        Student stud1 = new Student("Messi", 12, 1);
+        Student stud2 = new Student("Ronaldo", 15, 2);
+
+        stud1.printDetails();
+        stud2.printDetails();
+    }
+}
+```
+*Output:*
+```
+Roll: 1, Name: Messi, Age: 12
+Roll: 2, Name: Ronaldo, Age: 15
+```
+Or this name result can be achieved by just passing the values to `printDetails` method as arguments.
+```java
+public class Student {
+
+    public void printDetails(String name, int age, int classRoll){
+        System.out.println("Roll: "+classRoll+", Name: "+name+", Age: "+age);
+    }
+}
+
+```
+```java
+public class Main {
+    public static void main(String[] args) {
+        Student stud1 = new Student();
+        Student stud2 = new Student();
+
+        stud1.printDetails("Messi", 12, 1);
+        stud2.printDetails("Ronaldo", 15, 2);
+    }
+}
+```
+*Output:*
+```
+Roll: 1, Name: Messi, Age: 12
+Roll: 2, Name: Ronaldo, Age: 15
+```
+So it is clear that using objects provides us with the flexibility to accomplish tasks in various ways.
 
 
 ## Static Variables
