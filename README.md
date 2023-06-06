@@ -1,6 +1,88 @@
 # OOP in Java
 > Collection of Java code examples and explanations covering OOP concepts.
 
+## Into
+**OOP stands for Object-Oriented Programming. It is a programming paradigm that organizes software design around objects, which are instances of classes. Here, we'll explore the basics of OOP in Java, including classes, objects, inheritance, polymorphism, and encapsulation.**  
+
+In order to fully understand the main concepts of OOP,  it is importand to familiarize ourselves with Java classes and their components such as constructors, methods, access modifiers and objects. 
+
+## Classes
+In object-oriented programming (OOP), a class is a blueprint for creating objects. It defines the data and behavior that all objects of that type share. Classes are used to organize code and data, and to make code more reusable.
+
+```java
+public class MyClass {
+    
+}
+```
+## Methods
+In Java, a method is a block of code that performs a specific task. The code inside of a method is executed when the method is called. It can accept input parameters, execute a sequence of statements, and optionally return a value.
+```java
+public class MyClass {
+    public void myMethod() {
+        // method body
+    }
+
+    public int myAgeMethod(int age) {
+        // method body
+        return age;
+    }
+}
+```
+
+
+## Main Method
+The main method is a special method in Java that serves as the entry point for a Java application. When you run a Java program, it starts executing the code from the main method.
+```java
+public class MyClass {
+
+    // main method
+    public static void main(String[] args){  
+    
+    }
+    
+    
+    
+    // Normal methods
+    public void myMethod() {
+      
+    }
+
+    public int myAgeMethod(int age) {
+        
+        return age;
+    } 
+}
+```
+
+## Constructors
+A constructor is a special method used to initialize objects of a class. It has the same name as the class and doesn't have a return type. The code inside a constructor will run whenever a object is created. We will discuss objects very soon. 
+
+```java
+public class MyClass {
+    
+    // constructor
+    public MyClass() {
+        
+    }
+
+    // main method
+    public static void main(String[] args){  
+    
+    }
+    
+    // Normal methods
+    public void myMethod() {
+      
+    }
+
+    public int myAgeMethod(int age) {
+        
+        return age;
+    } 
+}
+```
+
+
 ## Static Variables
 
 **In Java, static variables belong to the class rather than to objects or instances of the class. They are also known as class variables because they are shared among all objects or instances of the class.**
