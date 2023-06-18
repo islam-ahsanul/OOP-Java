@@ -320,7 +320,7 @@ Good Morning
 
 ## Encapsulation
 Encapsulation means the combining of variables and code methods into a single unit. Encapsulation hides a class's variables from other classes and allows them to be accessed only by the methods of the class in which they are found.
-<!--
+
 ## Inheritence
 ## Polymorphism
 ## Final Keyword
@@ -329,5 +329,5 @@ Encapsulation means the combining of variables and code methods into a single un
 ## Abstract and Interface
 ## Exception Handling
 ## Thread 
---> 
-Work in progress...
+
+> Work in progress...
