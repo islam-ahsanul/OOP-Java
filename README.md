@@ -247,7 +247,7 @@ public class Example {
 
 **In Java, static variables belong to the class rather than to objects or instances of the class. They are also known as class variables because they are shared among all objects or instances of the class.**
 
-**So the `static` keyword means that every object shares the same variable, any changes to the static variable will be reflected in all objects.**
+**So the `static` keyword means that every object shares the same variable any changes to the static variable will be reflected in all objects.**
 
 *Let's consider an example where we write a code that lists the names of children in a family, along with their corresponding numbers.*
 
