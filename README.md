@@ -328,5 +328,5 @@ Encapsulation means the combining of variables and code methods into a single un
 ## Method overriding
 ## Abstract and Interface
 ## Exception Handling
-## Thread 
+## Thread
 
