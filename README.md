@@ -1,5 +1,5 @@
 # OOP in Java
-> Collection of Java code examples and explanations covering OOP concepts.
+> Collection of Java code examples and explanations covering OOP concepts
 
 ## Intro
 **OOP stands for Object-Oriented Programming. It is a programming paradigm that organizes software design around objects, which are instances of classes. Here, we'll explore the basics of OOP in Java, including classes, objects, inheritance, polymorphism, and encapsulation.**  
